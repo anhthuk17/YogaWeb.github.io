@@ -233,7 +233,7 @@ html{
     margin-right: auto;
     text-align: center;
     height: 31.25em;
-    margin-bottom: 0em;
+    margin-bottom: 2em;
 }
 
 
@@ -457,6 +457,9 @@ html{
 
 @media (max-width: 80em) {
     
+    .galery-list{
+        margin-bottom: 0;
+    }
 
     .fs-75{
         font-size: 2.5em;
@@ -515,7 +518,7 @@ html{
     }
 
     .sec-desc{
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .section-desc{
