@@ -15,7 +15,7 @@ html{
 }
 
 .fs-75{
-    font-size: 4.6875em;
+    font-size: 4.1em;
 }
 
 .fs-58{
@@ -23,11 +23,11 @@ html{
 }
 
 .pad-top{
-    padding-top: 3.125em;
+    padding-top: 2em;
 }
 
 .mar-top{
-    margin-top: 1.875em;
+    margin-top: 2em;
 }
 
 .mar-top-75{
@@ -55,7 +55,7 @@ html{
 }
 
 .mar-bottom{
-    margin-bottom: 1.875em;
+    margin-bottom: 4em;
 }
 
 .txt-center{
@@ -92,12 +92,15 @@ html{
 #logo{
     float: left;
     height: 100%;
-    margin-right: 5%;
 
 }
 
 .logo-img{
     height: 100%;
+}
+
+.nav{
+    float: right;
 }
 
 .nav li{
@@ -156,7 +159,7 @@ html{
 
 .section-heading{
     color: #484f5b;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.05em;
     font-weight: 700;
 
 }
@@ -171,12 +174,12 @@ html{
 }
 
 .join-btn{
-    margin-top: 5.25em;
+    color: #484f5b;
     font-size: 1.3125em;
-    margin-top: 6.875em;
-    margin-bottom: 11.25em;
+    margin-top: 3em;
+    margin-bottom: 8em;
     background: #f0cdc7;
-    padding:  1.25em 1.875em;
+    padding:  2%;
     text-transform: uppercase;
     font-weight: 700;
     border: none;
@@ -219,7 +222,6 @@ html{
 /* Galery */
 .galery-back-gr{
     background: url(../img/img10.png) top center / cover no-repeat;
-    padding-bottom: 6.25em;
 }
 
 .galery-list{
@@ -229,7 +231,7 @@ html{
     margin-right: auto;
     text-align: center;
     height: 31.25em;
-    margin-bottom: 6.25em;
+    margin-bottom: 0em;
 }
 
 
@@ -272,16 +274,20 @@ html{
 }
 
 .galery-header{
-    font-size: 1.875em;
-    font-weight: 600;
-    letter-spacing: 0.125em;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 0.05em;
 
 }
 
 .galery-desc{
-    font-size:  1.25em;
+    font-size:  1em;
     margin-top: 0.9375em;
     line-height: 1.4;
+}
+
+.sec-heading{
+    font-weight: 700;
 }
 
 
@@ -348,7 +354,7 @@ html{
 
 .mar-left-35{
     margin-left: 35%;
-    margin-bottom: 0;
+    margin-bottom: 3em;
 }
 
 
@@ -362,6 +368,7 @@ html{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    align-content: space-evenly;
     color: white;
 
 }
@@ -446,16 +453,36 @@ html{
 }
 
 
+@media (max-width: 80em) {
+    
 
-
-
-
-
-@media (max-width: 1064.0625em) {
-    .section-desc {
-        display: none;
+    .fs-75{
+        font-size: 2.5em;
     }
 
+    .fs-58{
+        font-size: 2em;
+    }
+
+    .section-desc,
+    .join-btn{
+        font-size: 1em;
+    }
+
+}
+
+
+
+
+@media (max-width: 64em) {
+    
+    .nav li {
+        padding: 0 1em;
+    }
+
+    .nav a {
+        line-height: 6em;
+    }
     
 
     /* .mar-right {
@@ -468,23 +495,36 @@ html{
         margin-right: 60%;
     } */
 
+
+    .pad-top{
+        padding-top: 1em;
+    }
+
     .fs-75{
-        font-size: xx-large;
+        font-size: 2em;
     }
 
     .fs-58{
-        font-size: x-large;
+        font-size: 3.5em;
+    }
+
+    .sec-desc{
+        font-size: 1.5em;
+    }
+
+    .section-desc{
+        font-size: 1em;
     }
     
 
     .join-btn{
-        margin-top: 5.25em;
+
         background: #f0cdc7;
         text-transform: uppercase;
         font-weight: 700;
         border: none;
         padding: 0.5em 1em;
-        font-size: xx-small;
+        font-size: 1em;
     }
 
     .mar-left-35{
@@ -496,11 +536,6 @@ html{
 
     }
     
-    
-
-    #logo{
-        margin-right: -5%;
-    }
 
     #footer{
         flex-wrap: wrap;
@@ -535,12 +570,46 @@ html{
     }
 
     .social-list-footer{
-        display: none;
+        /* display: none; */
+    }
+
+    /* slider 5 */
+    .social-list {
+        margin-top: 4em;
+        margin-bottom: 6em;
+    }
+
+    
+
+    /* form get in touch */
+    .form-get-in-touch{
+        padding-bottom: 3em;
+    }
+
+    /* footer */
+    #footer{
+        height: 38em;
     }
 
 }
 
+@media (max-width: 60em){
+    #header{
+        height: 6em;
+    }
+    
+}
+
 @media (max-width: 50em) {
+
+    .pad-top {
+        padding-top: 1.5em;
+    }
+    .mar-top,
+    .mar-bottom {
+        margin-bottom: 2em;
+    }
+
     #header{
         height: 4em;
     }
@@ -550,24 +619,22 @@ html{
     .menu-icon{
         display: block;
     }
-    .fs-75{
-        font-size: x-large;
-    }
 
     .fs-58{
        
-            font-size: x-large;
+            font-size: 3em;
     }
 
-    .join-btn{
-        font-size: x-small;
-        margin-top:  1.25em;
-        margin-bottom: 3.125em;
+    .section-desc,
+    .join-btn {
+        font-size: 0.75em;
+        margin: 1em 0;
     }
 
-    .section-heading{
-        font-weight: 300;
+    .mar-top {
+        margin-top: 1em;
     }
+
 
     .program-list{
         margin-top: 0;
@@ -589,17 +656,15 @@ html{
     }
 
     .galery-back-gr{
+        margin-bottom: 4em;
         
         
     }
    
-    .galery-back-gr{
-        padding-bottom: 0;
-        
-    }
+    
 
-    .content-section{
-        margin-bottom: 18%;
+    .content-section {
+        margin-bottom: 13%;
     }
 
     .mar-bot-12{
@@ -609,31 +674,57 @@ html{
     .menu-icon{
         float: right;
         text-align: center;
-        line-height: 8.75em;
+        line-height: 4em;
         padding: 0 1.875em;
         font-size:  1.25em;
     }
 
     #footer{
-        height: 60em;
-        font-size: x-small;
+        font-size: 0.8em;
     }
 
-    .your-company,
-    .sitemap,
-    .sit-amet,
-    .lorem-ipsum{
-        width: 100%;
-        text-align: center;
-    
+    .sec-desc{
+        font-size: 1.5em;
     }
+
+    .galery-header {
+        font-size: 2em;
+    }
+
+    .galery-desc {
+        font-size: 1.5em;
+    }
+
+    /* slider 5 */
+    .mar-bot-12{
+        margin-bottom: -30%;
+    }
+
+    /* form get in touch */
+
+    .social-list {
+        margin-top: 2em;
+        margin-bottom: 17em;
+    }
+
+    .mar-left-35{
+        margin-top: 3em;
+    }
+
+    .form-get-in-touch{
+        padding-bottom: 0;
+    }
+
+    /* footer */
+
+    
     
 }
 
 
-@media (max-width: 37.5em) {
+@media (max-width: 44em) {
     #header{
-        height: 2em;
+        height: 4em;
     }
 
     .form-input{
@@ -642,16 +733,12 @@ html{
 
     .menu-icon{
         line-height: 4em;
-        font-size: x-small;
-    }
-    
-    .fs-75{
-        font-size: x-small;
+        font-size: 1em;
     }
 
     .fs-58{
        
-            font-size: x-small;
+        font-size: x-small;
     }
 
     .content-section {
@@ -659,9 +746,8 @@ html{
     }
 
     .join-btn{
-        font-size: xx-small;
         margin-top:  1.25em;
-        margin-bottom: 3.125em;
+        margin-bottom: 1em;
     }
 
     .program-img{
@@ -675,7 +761,7 @@ html{
     }
 
     .mar-bottom {
-        margin-bottom: 3em;
+        margin-bottom: 4em;
     }
 
     .mar-top {
@@ -683,7 +769,11 @@ html{
     }
 
     .pad-top {
-        padding-top: 3em;
+        padding-top: 1.5em;
+    }
+
+    .galery-back-gr{
+        margin-bottom: 0;
     }
 
     .galery-header {
@@ -714,7 +804,7 @@ html{
 
     .sec-heading{
         font-weight: 600;
-        font-size: 1em;
+        font-size: 1.5em;
         letter-spacing: 0.08em;
     }
 
@@ -745,5 +835,74 @@ html{
     
     }
 
+    /* slider 5 */
+    
+    /* footer */
+    #footer {
+        height: 50em;
+        font-size: 0.5em;
+    }
+
+    .your-company,
+    .sitemap,
+    .sit-amet,
+    .lorem-ipsum{
+        width: 20%;
+        text-align: center;
+    
+    }
+    
+    .social-footer{
+        width: 100%;
+        
+        
+    }
 
 }
+
+
+@media only screen and (max-width:36em) {
+    .section-desc{
+        display: none;
+    }
+
+    .section-heading{
+        font-size: 1.25em;
+    }
+
+    .join-btn {
+        width: 100%;
+        padding: 1em;
+        margin-bottom: 8em;
+    }
+
+    
+}
+
+@media only screen and (max-width:30em){
+
+    .section-heading{
+        font-size: 1em;
+    }
+
+    .join-btn {
+        padding: 0.5em;
+        margin-bottom: 5em;
+        font-size: 0.75em;
+    }
+
+
+}
+
+@media only screen and (max-width:20em){
+    .content-section{
+        margin-bottom: -5%;
+    }
+
+    /* form get in touch */
+    .mar-bottom{
+        margin-bottom: -3em;
+    }
+
+}
+
